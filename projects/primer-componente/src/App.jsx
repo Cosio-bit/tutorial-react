@@ -1,5 +1,5 @@
 import './App.css'
-import { TwitterFollowCard } from './TumblrCard.jsx'
+import { TumblrCard } from './TumblrCard.jsx'
 
 const users = [
   {
@@ -29,13 +29,13 @@ export function App () {
     <section className='App'>
       {
         users.map(({ userName, name, isFollowing }) => (
-          <TwitterFollowCard
+          <TumblrCard
             key={userName}
             userName={userName}
             initialIsFollowing={isFollowing}
           >
             {name}
-          </TwitterFollowCard>
+          </TumblrCard>
         ))
       }
     </section>

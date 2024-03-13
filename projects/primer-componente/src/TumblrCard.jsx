@@ -1,11 +1,14 @@
 import { useState } from 'react'
 
-export function TwitterFollowCard ({ children, userName, initialIsFollowing }) {
+
+export function TumblrCard ({ children, userName, initialIsFollowing }) {
   const [isFollowing, setIsFollowing] = useState(initialIsFollowing)
 
-  console.log('[TwitterFollowCard] render with userName: ', userName)
+  console.log('[TumblrCard] render with userName: ', userName)
 
-  const text = isFollowing ? 'Siguiendo' : 'Seguir'
+  const text = isFollowing 
+    ? 'Siguiendo' 
+    : 'Seguir'
   const buttonClassName = isFollowing
     ? 'tw-followCard-button is-following'
     : 'tw-followCard-button'
@@ -13,6 +16,8 @@ export function TwitterFollowCard ({ children, userName, initialIsFollowing }) {
   const handleClick = () => {
     setIsFollowing(!isFollowing)
   }
+
+  const addAt = () => {return `@${userName}`}
 
   return (
     <article className='tw-followCard'>
@@ -24,7 +29,7 @@ export function TwitterFollowCard ({ children, userName, initialIsFollowing }) {
         />
         <div className='tw-followCard-info'>
           <strong>{children}</strong>
-          <span className='tw-followCard-infoUserName'>@{userName}</span>
+          <span className='tw-followCard-infoUserName'>@{userName} o {addAt(userName)}</span>
         </div>
       </header>
 
