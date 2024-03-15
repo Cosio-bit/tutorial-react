@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Cosio-bit/tutorial-react#readme",
   "devDependencies": {
     "standard": "^17.1.0"
-  }
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/react-scripts/config/.eslintrc.json"}
+
 }
