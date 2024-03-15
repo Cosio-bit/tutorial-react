@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 
-export function TumblrCard ({ children, userName, initialIsFollowing }) {
+export function TumblrCard ( children, userName, initialIsFollowing ) {
   const [isFollowing, setIsFollowing] = useState(initialIsFollowing)
 
   console.log('[TumblrCard] render with userName: ', userName)
