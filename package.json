@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Cosio-bit/tutorial-react/issues"
   },
-  "homepage": "https://github.com/Cosio-bit/tutorial-react#readme"
+  "homepage": "https://github.com/Cosio-bit/tutorial-react#readme",
+  "devDependencies": {
+    "standard": "^17.1.0"
+  }
 }
