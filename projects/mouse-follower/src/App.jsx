@@ -12,7 +12,7 @@ function App() {
     <>
     <div> clase 3</div>
     <button onClick={() => setEnabled(!enabled)}>
-      {enabled ? 'Desactivar' : 'activar'} seguir puntero</button>
+      {enabled ? 'Desactivar' : 'activar'} seguir</button>
   </>
   )
 }
